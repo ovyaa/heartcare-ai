@@ -3,7 +3,7 @@ import { ArrowLeft, RotateCcw, TrendingUp, TrendingDown, Stethoscope, Sparkles, 
 import { usePrediction } from '@/context/PredictionContext';
 import { RiskGauge } from '@/components/RiskGauge';
 import { RiskBadge } from '@/components/Charts';
-import Disclaimer from '@/components/Disclaimer';
+
 
 export default function Result() {
   const { result } = usePrediction();
@@ -136,7 +136,7 @@ export default function Result() {
       </div>
 
       <div className="mt-8">
-        <Disclaimer variant="card" />
+       
       </div>
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">

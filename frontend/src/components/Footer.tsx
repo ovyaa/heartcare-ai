@@ -37,24 +37,18 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm">
               <li><span className="text-slate-500">AI-based risk assessment</span></li>
               <li><span className="text-slate-500">Explainable predictions</span></li>
-              <li><span className="text-slate-500">Educational project</span></li>
+
             </ul>
           </div>
         </div>
 
         <div className="mt-10 flex items-start gap-3 rounded-xl bg-amber-50 p-4 ring-1 ring-amber-100">
           <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-amber-500" />
-          <p className="text-xs leading-relaxed text-amber-800">
-            <strong>Medical Disclaimer:</strong> This tool provides an AI-based
-            heart disease risk assessment for informational purposes only. It is
-            not a medical diagnosis and should not replace professional medical
-            advice. Always consult a qualified healthcare professional for
-            medical concerns.
-          </p>
+
         </div>
 
         <div className="mt-8 border-t border-slate-100 pt-6 text-center text-xs text-slate-400">
-          © {new Date().getFullYear()} HeartCare AI — Final-Year AI/ML Project. Built for educational use.
+          © {new Date().getFullYear()} HeartCare AI
         </div>
       </div>
     </footer>

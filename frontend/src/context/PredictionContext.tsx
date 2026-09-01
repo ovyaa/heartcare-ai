@@ -1,5 +1,20 @@
+
 import { createContext, useContext, useState, type ReactNode } from 'react';
-import type { PredictionResult } from '@/utils/mockPrediction';
+
+export interface FactorContribution {
+  label: string;
+  impact: 'positive' | 'negative';
+  weight: number;
+  detail: string;
+}
+
+export interface PredictionResult {
+  riskScore: number;
+  riskCategory: 'Low' | 'Moderate' | 'High';
+  confidence: number;
+  factors: FactorContribution[];
+  summary: string;
+}
 
 interface PredictionContextValue {
   result: PredictionResult | null;
@@ -10,6 +25,7 @@ const PredictionContext = createContext<PredictionContextValue | undefined>(unde
 
 export function PredictionProvider({ children }: { children: ReactNode }) {
   const [result, setResult] = useState<PredictionResult | null>(null);
+
   return (
     <PredictionContext.Provider value={{ result, setResult }}>
       {children}
@@ -19,6 +35,11 @@ export function PredictionProvider({ children }: { children: ReactNode }) {
 
 export function usePrediction() {
   const ctx = useContext(PredictionContext);
-  if (!ctx) throw new Error('usePrediction must be used within PredictionProvider');
+
+  if (!ctx) {
+    throw new Error('usePrediction must be used within PredictionProvider');
+  }
+
   return ctx;
 }
+

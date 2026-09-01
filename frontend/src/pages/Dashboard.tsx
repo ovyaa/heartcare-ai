@@ -4,7 +4,7 @@ import {
 } from 'lucide-react';
 import { BarChart, DonutChart, TrendChart, RiskBadge } from '@/components/Charts';
 import { mockDashboardStats, mockTrend, mockHistory } from '@/data/mockData';
-import Disclaimer from '@/components/Disclaimer';
+
 
 const statCards = [
   { label: 'Total Predictions', value: mockDashboardStats.totalPredictions, icon: ClipboardList, color: 'brand', sub: 'All-time assessments' },
@@ -126,7 +126,7 @@ export default function Dashboard() {
       </div>
 
       <div className="mt-8">
-        <Disclaimer variant="card" />
+    
       </div>
     </div>
   );

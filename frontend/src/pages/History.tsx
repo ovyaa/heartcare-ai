@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Search, History as HistoryIcon, ArrowRight, Inbox, Calendar, Filter } from 'lucide-react';
 import { mockHistory, type RiskCategory } from '@/data/mockData';
 import { RiskBadge } from '@/components/Charts';
-import Disclaimer from '@/components/Disclaimer';
+
 
 type FilterValue = 'all' | RiskCategory;
 
@@ -146,7 +146,7 @@ export default function History() {
       )}
 
       <div className="mt-8">
-        <Disclaimer variant="card" />
+      
       </div>
     </div>
   );

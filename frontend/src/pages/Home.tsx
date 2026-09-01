@@ -4,7 +4,7 @@ import {
   History, ArrowRight, Sparkles, LineChart, UserCheck, Stethoscope,
   TrendingUp,
 } from 'lucide-react';
-import Disclaimer from '@/components/Disclaimer';
+
 
 const features = [
   { icon: ClipboardList, title: 'Guided Risk Input', desc: 'A clean, multi-section form walks you through each clinical parameter with helpful hints.' },
@@ -250,10 +250,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Disclaimer */}
-      <section className="container-page pb-16">
-        <Disclaimer variant="card" />
-      </section>
+
     </div>
   );
 }

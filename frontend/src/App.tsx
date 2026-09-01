@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Disclaimer from '@/components/Disclaimer';
 import { PredictionProvider } from '@/context/PredictionContext';
 import Home from '@/pages/Home';
 import Dashboard from '@/pages/Dashboard';
@@ -14,7 +13,7 @@ function App() {
     <BrowserRouter>
       <PredictionProvider>
         <div className="flex min-h-screen flex-col">
-          <Disclaimer variant="banner" />
+         
           <Navbar />
           <main className="flex-1">
             <Routes>
