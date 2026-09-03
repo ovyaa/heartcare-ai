@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Activity, ShieldAlert } from 'lucide-react';
+import { Activity } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -40,11 +40,6 @@ export default function Footer() {
 
             </ul>
           </div>
-        </div>
-
-        <div className="mt-10 flex items-start gap-3 rounded-xl bg-amber-50 p-4 ring-1 ring-amber-100">
-          <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-amber-500" />
-
         </div>
 
         <div className="mt-8 border-t border-slate-100 pt-6 text-center text-xs text-slate-400">
